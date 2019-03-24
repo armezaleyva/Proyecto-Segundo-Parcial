@@ -87,7 +87,7 @@
 			{
 				v2f o;
 				o.pos = UnityObjectToClipPos(v.vertex);
-
+	
 				float3 norm = normalize(mul ((float3x3)UNITY_MATRIX_IT_MV, 
 				v.normal));
                 float2 offset = TransformViewToProjection(norm.xy);
