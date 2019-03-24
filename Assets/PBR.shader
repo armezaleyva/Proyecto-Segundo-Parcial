@@ -17,7 +17,6 @@ Shader "Custom/PBR"
 	SubShader
 		{
 			Tags { "RenderType" = "Opaque" }
-			LOD 100
 
 			CGPROGRAM
 			// Physically based Standard lighting model, and enable shadows on all light types
@@ -51,8 +50,8 @@ Shader "Custom/PBR"
 				o.Normal = normal;
 
 				// Rim lighting
-				// half rim = 1.0 - saturate(dot(normalize(IN.viewDir), o.Normal));
-				// o.Emission = _RimAlbedo.rgb * pow(rim, _RimPower);
+				//half rim = 1.0 - saturate(dot(normalize(IN.viewDir), o.Normal));
+				//o.Emission = _RimAlbedo.rgb * pow(rim, _RimPower);
 				fixed4 c = tex2D(_MainTex, IN.uv_MainTex) * _Albedo;
 				o.Albedo = c.rgb;
 				// Metallic and smoothness come from slider variables
