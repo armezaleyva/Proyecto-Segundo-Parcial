@@ -50,8 +50,10 @@
 			float3 normal = UnpackNormal(tex2D(_BumpTex, IN.uv_BumpTex));
 			normal.z = normal.z / _NormalAmount;
 			o.Normal = normal;
-			half rim = 1.0 - saturate(dot(normalize(IN.viewDir), o.Normal));
-			o.Emission = _RimColor.rgb * pow(rim, _RimPower);
+
+			// Rim lighting
+			// half rim = 1.0 - saturate(dot(normalize(IN.viewDir), o.Normal));
+			// o.Emission = _RimColor.rgb * pow(rim, _RimPower);
 		}
 
         ENDCG
