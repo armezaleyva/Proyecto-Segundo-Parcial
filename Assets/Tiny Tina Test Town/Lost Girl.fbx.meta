@@ -25,7 +25,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.001_tina.tga
-    second: {fileID: 2100000, guid: 1726a4f897322e5489f0cc2897e99687, type: 2}
+    second: {fileID: 2100000, guid: b0c6c604840e578439c1d5128c449b0a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
