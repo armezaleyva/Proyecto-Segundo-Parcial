@@ -8,7 +8,6 @@
 		_OutlineColor("Outline Color", Color) = (0, 0, 0, 1)
 		_OutlineSize("Outline Size", Range(0.001, 0.1)) = 0.05
 		_BumpTex("Normal", 2D) = "bump" {}
-		_NormalAmount("Normal Amount", Range(-3, 3)) = 1
     }
 
     SubShader
@@ -19,7 +18,6 @@
         float4 _Albedo;
         sampler2D _MainTex;
         sampler2D _RampTex;
-		float _NormalAmount;
 
         float4 LightingToonRamp(SurfaceOutput s, fixed2 lightDir, fixed atten)
         {
