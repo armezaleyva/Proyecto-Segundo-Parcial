@@ -1,4 +1,4 @@
-﻿	Shader "Custom/Toon"
+﻿	Shader "Custom/LanternToon"
 {
     Properties
     {
